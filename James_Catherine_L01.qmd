@@ -26,8 +26,6 @@ citation-location: margin
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
 
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
 [My github link](https://github.com/stat301-3-2026-spring/l01-review-Cathyj112)
 :::
 
@@ -46,7 +44,7 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Supervised Learning contains pre categorized data. It is task driven with the objective of creating predication and predictive models. Within the supervised learning process are classification and regression model. There is a target that you are aiming to find.
 
 :::
 
@@ -57,7 +55,7 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Supervised learning uses pre categorized data and unsupervised learning uses unlabeled data. The main objective for unsupervised is pattern/structure recognition compared to supervised learning objective of creating predictions.  
 
 :::
 
@@ -70,7 +68,8 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Descriptive models explain or reveals patterns and trends within the data
+
 
 :::
 
@@ -79,7 +78,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential models contain a hypothesis that you are testing out using the model. Trying to explain the how and why of relationships 
 
 :::
 
@@ -88,7 +87,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+produces the most accurate prediction possible for new data
 
 :::
 
@@ -103,7 +102,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model uses an equation to come up with an answer. It typically has an assumption and itr is knowledged driven. Examples include linear and logistic regression models 
 
 :::
 
@@ -114,7 +113,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This type of model is not equation based and there are no assumptions of F(x). It is typically data - driven. Examples include tree based models or K nearest neighbors 
 
 :::
 
@@ -125,7 +124,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models are parametric model and Empirically driven models are non parametric 
 
 :::
 
@@ -136,7 +135,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Parametric models are typically easier to interpret because there is a fixed/predefined relationship to see how variables impact relationships
 
 :::
 
@@ -147,7 +146,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Empirically driven models are typically more flexible because the model doesn't assume a fixed f(x) to describe the data. Empirically driven models adapt to the data and capture all sorts of relationships like non linear ones that parametric fails to capture well.
 
 :::
 
@@ -158,7 +157,7 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Typically with parametric/mechanistic models, there is high bias low variance trade off. This means there is potential for under fitting because the model can't capture irl data with so much noise. Typically with empirical/non-parametric models, there is a low bias and high variance which could lead to over fitting. The model is too complex and does well on the training data, but performs poorly on test data.  
 
 :::
 
@@ -169,8 +168,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+Regression produces a numeric outcome variable. Classification creates predictions for categories
 :::
 
 ### Question 6 
@@ -180,7 +178,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Stratifying by the outcome/target variable is useful because it fixes the class imbalances by pulling the same amount of proportion for each class.
 
 :::
 
@@ -191,7 +189,8 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+V-fold cross-validation splits your data into V equal parts, called folds. The model is trained V times, each time using V−1 folds for training and the remaining fold for testing, rotating which fold is used as the test set. The performance results from the RMSE are then averaged to give a more reliable estimate of how well the model will perform on new data.
+
 
 :::
 
@@ -202,7 +201,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+We might use a bootstrap resampling procedure instead of v-fold cross validation when we have a smaller dataset with the goal of estimating uncertaintity
 
 :::
 
@@ -213,7 +212,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Model tuning is where we have different hyperparameters that we can change the values of to find the best-performing model. 
 
 :::
 
@@ -224,7 +223,9 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- RMSE:The square root of the average squared differences between predicted and actual values
+
+- MSE: The average squared difference between predicted values and actual values
 
 :::
 
@@ -233,7 +234,9 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Accuracy: The proportion of correct predictions out of the total number of cases
+
+ROC AUC: It measures how well a model separates classes across probability thresholds 
 
 :::
 
@@ -248,7 +251,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+I believe this is a prediction problem because there is no assumption made and you are trying to predict if the calls will actually impact a customer's likelihood of churn in the next month
 
 :::
 
@@ -257,7 +260,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+I think this is an inferential problem because you are trying to find the likelihood that a customer will churn from a high number of service calls. This is already assuming/inferring there is an existing relationship between these 2 things, but now, we are just calculating the severity of it.
 
 :::
 
